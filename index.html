@@ -19,8 +19,9 @@
         }
         layer.bindPopup(popupContent);
     }
-    var map = L.map('map').setView([45.064881, -0.25768], 12);
-    var geo = 'https://geo.api.gouv.fr/communes/?nom=maransin&geometry=contour&format=geojson';
+    var map = L.map('map').setView([45.064881, -0.25768], 8);
+    //var geo = 'https://geo.api.gouv.fr/communes/?nom=maransin&geometry=contour&format=geojson';
+    var geo = 'https://geo.api.gouv.fr/communes/?codeDepartement=33&geometry=contour&format=geojson';
 
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
